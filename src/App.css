@@ -1,0 +1,138 @@
+#root {
+    background-color: #0D1117;
+    min-height: 100vh;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.header h2 {
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.create-btn {
+    background: linear-gradient(to right, #854cff, #b573f8);
+    font-weight: 600;
+    color: #ffff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-row {
+    padding-inline: 300px;
+}
+
+@media (max-width: 996px) {
+    .custom-row {
+        padding-inline: 200px;
+    }
+}
+
+@media (max-width: 996px) {
+    .custom-row {
+        padding-inline: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-row {
+        padding-inline: 20px;
+    }
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.task-holder {
+    width: 100%;
+    height: 98%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.task-holder p {
+    color: #ffff;
+    font-weight: 400;
+}
+
+.card-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px 1px !important;
+    text-align: left;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.modal-content {
+    background-color: #171e28 !important;
+    color: #ffff !important;
+}
+
+.modal-header,
+.modal-footer {
+    border: none !important;
+}
+
+.form-control {
+    background-color: #171e28 !important;
+    outline: #854cff !important;
+    border: #854cff 2px solid !important;
+    color: #c7b1de !important;
+}
+
+.color-input:first-of-type {
+    margin-left: 15px;
+}
+
+.color-input:not(:last-child) {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0.2;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: none;
+    border-radius: 50%;
+}
+
+input[type="radio"].blue-input {
+    background-color: #33ffe0;
+}
+
+input[type="radio"].purple-input {
+    background-color: #aa3bff;
+}
+
+input[type="radio"].red-input {
+    background-color: #ff0084;
+}
+
+input[type="radio"].green-input {
+    background-color: #4fff7e;
+}
+
+input[type="radio"]:checked {
+    opacity: 1;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
