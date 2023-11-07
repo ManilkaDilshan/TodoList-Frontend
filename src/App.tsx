@@ -76,6 +76,7 @@ function App() {
         <button className="create-btn" onClick={toggle}>Create Task</button>
       </div>
       <Row className="custom-row">
+        {taskList.length === 0 && <div className="text-center mt-5 text-white">Add Tasks Todo 🙌</div>}
         {taskList && taskList.slice()
           .sort((a, b) => (a.isCompleted === b.isCompleted) ? 0 : a.isCompleted ? -1 : 1).map((task, index) => (
             <Col key={index} md={12} style={{ marginBottom: "30px" }}>
